@@ -174,7 +174,7 @@ function showModal(modalEl) { modalEl.classList.remove("d-none"); }
 function hideModal(modalEl) { modalEl.classList.add("d-none"); }
 
 function titleRole(role) {
-  return role === "teacher" ? "Lehrer" : "Schueler";
+  return role === "teacher" ? "Lehrer" : "Schüler";
 }
 
 function clampKey(key) {
@@ -922,7 +922,7 @@ savePlayerBtn.addEventListener("click", function() {
     return;
   }
   if (!SPORTS[sportKey]) {
-    addPlayerHint.textContent = "Bitte Sportart waehlen.";
+    addPlayerHint.textContent = "Bitte Sportart wählen.";
     return;
   }
 
